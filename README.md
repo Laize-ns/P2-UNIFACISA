@@ -7,4 +7,6 @@ Repositório com conteúdo da disciplina de P2
 
 [2. Operadores](conteudos/operadores.md)
 
+[3. Estruturas condicionais](conteudos/estruturascondicionais.md)
+
 [Dicas GitHub Gist](https://gist.github.com/Laize-ns/df973e7e7ae12fbc94a85f60db061a39)
