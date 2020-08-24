@@ -7,4 +7,4 @@ Repositório com conteúdo da disciplina de P2
 
 [2. Operadores](conteudos/operadores.md)
 
-[Dicas GitHub Gist]
+[Dicas GitHub Gist](git-comandos)
