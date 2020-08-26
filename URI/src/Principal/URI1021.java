@@ -1,15 +1,12 @@
 package Principal;
 
-import java.util.Scanner;
-
 public class URI1021 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		Scanner teclado = new Scanner(System.in);
-		
-		double valor = teclado.nextDouble();
+		computaNotas(4.00);
+	}	
+	public static void computaNotas (double valor) {
 		
 		int notasCem = (int)(valor/100);
 		valor = valor % 100;
@@ -54,7 +51,6 @@ public class URI1021 {
 		System.out.println(moedaCinco + "moeda(s) de R$0.05");
 		System.out.println(moedaUm + "moeda(s) de R$0.01");
 		
-		teclado.close();
 
 
 	}
