@@ -50,6 +50,35 @@ Especifica os detalhes da repetição controlada por contador em uma  única lin
 For (int contador = 1; contador <= 10; contador ++)
 
 ```
+- Exemplo 2:
+
+```java
+public basics
+
+import java.util.Scanner;
+
+public class ParesPositivos {
+
+  public static void main (String [] args) {
+  
+    Scanner entrada = new Scanner(System.in);
+  
+    int contParesPositivos = 0;  //contador iniciando em zero
+  
+    for (int i = 1; i < 25; i++) {
+  
+      System.out.println("Digite um número: ");
+      int num = entrada.nextInt(0;
+      if (num % 2 == 2 && num > 0 )
+        contParesPositivos++;
+ 
+    }
+    
+    System.out.println("Quantidade de números pares positivos: " +contParesPositivos);
+  }
+}
+
+```
 ## Do...While
 
 A instrução do...while testa a condição de continuação do loop depois de executar o corpo do loop; portanto o corpo sempre executa pelo menos uma vez. Quando uma instrução do...while termina, a execução continua com a próxima instrução na sequência.
@@ -76,7 +105,7 @@ public calss DoWhileTest {
  
  ```
 
-## break
+## Break
 
 quando executado ocasiona saída imediata da instrução de repetição. É vista como preguiça de raciocínio no while e for
 
