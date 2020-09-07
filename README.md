@@ -9,4 +9,10 @@ Repositório com conteúdo da disciplina de P2
 
 [3. Estruturas condicionais](conteudos/estruturascondicionais.md)
 
+[4. Estruturas de repetição](conteudos/estruturasrepeticao.md)
+
+[5. Como receber dados do teclado - Scanner](conteudos/scanner.md)
+
+[6. Utilização de classes, objetos e construtores](conteudos/classesobjetosconstutores.md)
+
 [Dicas GitHub Gist](https://gist.github.com/Laize-ns/df973e7e7ae12fbc94a85f60db061a39)
