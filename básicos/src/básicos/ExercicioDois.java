@@ -8,6 +8,9 @@ public class ExercicioDois {
 		
 		Scanner entrada = new Scanner(System.in);
 		
+		//programa que recebe do usuário 3 valores do tipo ponto flutuante 
+		//e imprime na tela a média aritmética destes números.
+		
 		System.out.println("Digite a primeira nota: ");
 		float nota1 = entrada.nextFloat();
 		

@@ -8,6 +8,9 @@ public class ExercicioUm {
 		
 				
 		Scanner entrada = new Scanner(System.in);
+		
+		//programa que recebe do usuário dois valores do tipo ponto flutuante 
+		//e imprime na tela qual dos dois é maior.
 				
 		System.out.println("Entre com o valor 1: ");
 		float valor1 = entrada.nextFloat();

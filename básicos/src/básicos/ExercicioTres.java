@@ -8,6 +8,14 @@ public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
 		
+		//programa que recebe do usuário o nome do produto, e seu preço. Se o preço for:
+
+//]0, 100[: dê 5% de desconto
+//[100,500[: dê 10% de desconto
+//[500, inf[: dê 15% de desconto 
+		
+		//Ao final, seu programa deve imprimir o nome do produto e preço com desconto.
+		
 		System.out.println("Digite o nome do produto: ");
 		String produto = entrada.next();
 		

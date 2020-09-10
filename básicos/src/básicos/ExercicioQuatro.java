@@ -8,6 +8,10 @@ public class ExercicioQuatro {
 		
 		Scanner entrada = new Scanner(System.in);
 		
+		//programa para receber como entrada dois números e 
+		//exibir a quantidade de múltiplos de 4 entre eles 
+		//(os extremos do intervalo não devem ser considerados).
+		
 		System.out.println("Entre com o primeiro valor: ");
 		int num1 = entrada.nextInt();
 		
@@ -15,7 +19,7 @@ public class ExercicioQuatro {
 		int num2 = entrada.nextInt();
 		
 		
-		for(int i = 1; i < num2; i++) {
+		for(int i = num1 + 1; i < num2; i++) {
 			if(i % 4 == 0) {
 				System.out.println(i);
 				
