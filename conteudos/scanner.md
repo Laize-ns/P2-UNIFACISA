@@ -18,13 +18,13 @@ import java.util.Scanner; //vai utilizar a classe Scanner
 public class Adicao {
 
 	public static void main (String[] args){ 
- //método mais inicia a execução do aplicativo Java
+ //método main inicia a execução do aplicativo Java
 
 		Scanner entrada = new Scanner(System.in);
 		//criou um scanner para obter a entrada a partir da janela de comando
 		int number1; //primeiro numero a somar
 		int number2; //segundo numero a somar
-		int sum; //somade number1 e number2
+		int sum; //soma de number1 e number2
 
 		System.out.println(“Digite o primeiro numero: “);
 		number1 = entrada.nextInt(); //lê o primeiro numero fornecido pelo usuário
