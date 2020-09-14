@@ -27,6 +27,12 @@
 - Pode colocar construtor com argumentos na hora de instanciar o objeto.
 - Se não especifica, a JVM automaticamente injeta o construtor default (construtor sem argumentos/vazio).
 - "this" é usado para evitar ambiguidade.
+- Construtores com argumentos podem ter argumentos com mesmos nomes das variáveis globais, mas para isto precisa usar o "this" para remover a ambiguidade ("this" referencia a variável global).
+
+## Sobrecarga:
+
+- é a possibilidade de ter diversos construtores.
+- quando existe um construtor na classe, a JVM não injeta o construtor default.
     
     - Exemplo:
     
@@ -42,13 +48,13 @@
       String cpf;
     
       
-      Pessoa ( char s, int i, String n, double p, double a, String c) {
-        sexo = s;
-        idade = i;    //construtor
-        nome = n;
-        peso = p;
-        altura = a;
-        cpf = c;
+      Pessoa ( char sexo, int idade, String nome, double peso, double altura, String cpf) {
+        this.sexo = sexo;
+        this.idade = idade;    //construtor com argumentos
+        this.nome = nome;       //global recebe o valor da local
+        this.peso = peso;
+        this.altura = altura;
+        this.cpf = cpf;
         
       void calculaImc () {    //função que "printa" e não retorna nada (void).
         double imc = peso/(altura * altura) {
@@ -88,7 +94,13 @@
       p1.calculaImc(0;    //chama a função daquele objeto. executa a função.
       
     }
-}
+ }
+
+## Como os espaços são alocados na memória?
+ 
+ - Tipos primitivos são alocados diretamente na memória, e apenas um espaço de mémoria é suficiente, pois tipos primitivos têm um tamanho definido (sabemos o menor e o maior valor que um int, por exemplo, pode assumir).
+ - Isto vale para todos: boolean, byte, short, int, long, char, double, float.
+ - Para objetos, nós reservamos um espaço na memória para a variável de referência (ex.: p1), e outro espaço na memória para o objeto propriamente dito e seus atributos (que podem inclusive conter objetos).
         
    
           
