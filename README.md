@@ -22,5 +22,9 @@ Repositório com conteúdo da disciplina de P2
    [6.3. Strings](conteudos/strings.md)
   
    [6.4. Arrays](conteudos/arrays.md)
+   
+   [6.5. Listas](conteudos/listas.md)
+   
+[7. Reuso](conteudos/reuso.md)
 
 [Dicas GitHub Gist](https://gist.github.com/Laize-ns/df973e7e7ae12fbc94a85f60db061a39)
