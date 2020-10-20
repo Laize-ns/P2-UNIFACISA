@@ -27,4 +27,6 @@ Repositório com conteúdo da disciplina de P2
    
 [7. Reuso](conteudos/reuso.md)
 
+[8. Polimorfismo](conteudos/polimorfismo.md)
+
 [Dicas GitHub Gist](https://gist.github.com/Laize-ns/df973e7e7ae12fbc94a85f60db061a39)
