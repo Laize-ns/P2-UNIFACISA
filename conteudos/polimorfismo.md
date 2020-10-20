@@ -18,7 +18,7 @@
   }
 }
  
- class Carrro extends Veiculo{
+ class Carro extends Veiculo{
   public void turnon(){
     System.out.println("Carro funcionando!");
   }
@@ -29,7 +29,7 @@ public class Test{
     Carro c = new Carro();
     c.turnon();
     
-    Veiculo v = new Carror();
+    Veiculo v = new Carro();
     v.turnon();
   }
 }
