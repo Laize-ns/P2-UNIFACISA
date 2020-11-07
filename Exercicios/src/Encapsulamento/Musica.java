@@ -1,6 +1,6 @@
 package Encapsulamento;
 
-public class Musica1 {
+public class Musica {
 	
 	private String nome, artista, letra;
 	private Genero genero;
@@ -9,7 +9,7 @@ public class Musica1 {
 	private int numeroVezesReproducao;
 	
 	
-	public Musica1(String nome, String artista, String letra, Genero genero,
+	public Musica(String nome, String artista, String letra, Genero genero,
 			int anoLancamento, double duracao, int numeroVezesReproducao) {
 		this.nome = nome;
 		this.artista = artista;
@@ -21,7 +21,7 @@ public class Musica1 {
 		
 	}
 	
-	public void Musica(String nome2, String artista2, String letra2, Genero samba, int anoLancamento2, double duracao2) {
+	public Musica(String nome2, String artista2, String letra2, Genero samba, int anoLancamento2, double duracao2) {
 		// TODO Auto-generated constructor stub
 	}
 
