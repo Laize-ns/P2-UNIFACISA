@@ -131,24 +131,24 @@ public class StringUtils {
 		
 		//StringVsStringBuilder
 		
-		String nome = "Eduardo";
+		String nome = "Maria";
 		System.out.println(System.identityHashCode(nome));
-		nome += " de";
+		nome += " Cecilia";
 		System.out.println(System.identityHashCode(nome));
-		nome += " Lucena";
+		nome += " Santos";
 		System.out.println(System.identityHashCode(nome));
-		nome += " Falcao";
+		nome += " Silva";
 		System.out.println(System.identityHashCode(nome));
 		
 		System.out.println("##################");
 		
-		StringBuilder nomeCompleto = new StringBuilder("Eduardo");
+		StringBuilder nomeCompleto = new StringBuilder("Maria");
 		System.out.println(System.identityHashCode(nomeCompleto));
-		nomeCompleto.append(" de");
+		nomeCompleto.append(" Cecilia");
 		System.out.println(System.identityHashCode(nomeCompleto));
-		nomeCompleto.append(" Lucena");
+		nomeCompleto.append(" Santos");
 		System.out.println(System.identityHashCode(nomeCompleto));
-		nomeCompleto.append(" Falcao");
+		nomeCompleto.append(" Silva");
 		System.out.println(System.identityHashCode(nomeCompleto));
 		
 	}
