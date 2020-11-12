@@ -8,20 +8,20 @@ public class StringUtils {
 	
 	public static String formataAtributo(String atributo) {
 		
-		//atributos iniciam com letra min˙scula e devem estar no formato camelCase; 
+		//atributos iniciam com letra min√∫scula e devem estar no formato camelCase; 
 		//Ex: "quantidade de questoes" ==> "quantidadeDeQuestoes"
 		
 		String [] palavras = atributo.split(" ");
-		//["quantidade", "de", "questıes"]
+		//["quantidade", "de", "quest√µes"]
 		
 		String atributoFormatado = palavras[0];
 		for(int i = 1; i < palavras.length; i++) {
-			// palavras[i] ==> "de", "questıes"
+			// palavras[i] ==> "de", "quest√µes"
 			char ini = palavras[i].toUpperCase().charAt(0);
 			String aux = String.valueOf(ini);
 			//aux ==> "D", "Q"
 			aux += palavras[i].substring(1);
-			//aux ==> "De", "Questıes"
+			//aux ==> "De", "Quest√µes"
 			atributoFormatado += aux;
 		}
 		
@@ -32,13 +32,13 @@ public class StringUtils {
 	
 	public static String formataMetodoGet(String metodo) {
 		
-		//mÈtodos get iniciam com get + identificador da vari·vel no formato camelCase; 
+		//m√©todos get iniciam com get + identificador da vari√°vel no formato camelCase; 
 				//Ex: "quantidade de questoes" ==> "getQuantidadeDeQuestoes"
 		
 	
 		String aux = StringUtils.formataAtributo(metodo);
 			
-			//transformando inicial da String para mai˙sculo
+			//transformando inicial da String para mai√∫sculo
 		char ini = aux.toUpperCase().charAt(0);	
 			//"Q" + "uantidadeDeQuestoes"
 		String out = ini+aux.substring(1);
@@ -50,78 +50,25 @@ public class StringUtils {
 		
 	}
 		
-	/*public static String formataClasse(String classe) {
-		
-	}
-		
-	//classes iniciam com letras mai˙sculas devem estar no formato camelCase; 
-	//Ex: "formatador de identificadores" ==> "FormatadorDeIdentificadores"
-
-	public static String ordenaStrings(String palavra1, String palavra2) {
-		
-	}
 	
-	//retorna uma ˙nica String, com as 2 palavras separadas por espaÁo mas em ordem lexicogr·fica;
-    //Ex: "chevrolet fiat" ==> "chevrolet e fiat"; "volkswagen ford" ==> "ford volkswagen"; "honda honda" ==> "honda honda"
 
-	public static String ehPalindromo(String palavra) {
-		//retorna verdadeiro se a palavre È um palÌndromo; Ex: "arara" ==> true.
-	}
-
-	public static String transformaParaCaixaAlta(String palavra) {
-		palavra = palavra.toUpperCase();
-		System.out.println(palavra);
-		// retornar palavra com letras mai˙sculas; Ex: "PhUlaNo dEtHal" ==> "PHULANO DETHAL"
-	}
-
-	public static int contaVogais(String frase) {
-		
-	}
-// informa a quantidade de vogais na frase; Ex: "In God We Trust" ==> 4
-
-	public static String removeEspacosSuperfluos(String frase) {
-		// retornar uma vers„o da frase digitada sem espaÁos supÈrfluos; 
-		//Ex: " Hay que endurecerse, pero sin perder la ternura jam·s " ==> "Hay que endurecerse, pero sin perder la ternura jam·s"
-	}
-
-	public static int[] ocorrencias(String frase, String subPalavra) {
-		//retorna todas as ocorrÍncia (Ìndices) da subpalavra dentro da frase; 
-		//Ex: "O doce perguntou para o doce, qual o doce mais doce?" ==> [2, 24, 37, 47]
-	}
-
-	public static int binarioPraDecimal(String binario) {
-		
-	}
-	// transforma a String binario para sua representaÁ„o em decimal;
-	//Ex: "101110010" ==> 370; "1100110011" ==> 819
-
-	public static int getQtdadePalavras(String frase) {
-		// retorna a quantidade de palavras separadas por espaÁo na frase; 
-		//Ex: "programar È muito f·cil" ==> 4
-	}
-
-	public static int[] histogramaLetras(String texto) {
-		//retorna um array com um histograma de letras (sem diferenciar mai˙sculas de min˙sculas) de um texto. 
-		//Ex: "the quick brown fox jumps over the lazy dog" ==> [1, 1, 1, 1, 3, 1, 1, 2, 1, 1, 1, 1, 1, 1, 4, 1, 1, 2, 1, 2, 2, 1, 1, 1, 1, 1] (perceba que o Ìndice 0 representa A, 1 representa B, e daÌ por diante)
-	}
-
-	/*Explique qual a diferenÁa entre criar uma String das seguintes formas:
-	String nome = "Eduardo";  ----> aqui foi injetado o cÛdigo do construtor pela JVM. … omitida a chamada ao construtor (new).
+	/*Explique qual a diferen√ßa entre criar uma String das seguintes formas:
+	String nome = "Eduardo";  ----> aqui foi injetado o c√≥digo do construtor pela JVM. √â omitida a chamada ao construtor (new).
 	String nome = new String("Eduardo");
 	Explique como funciona o String pool.
 
-	O que acontece toda vez que uma String È modificada? Considere o exemplo a seguir para embasar sua resposta.
+	O que acontece toda vez que uma String √© modificada? Considere o exemplo a seguir para embasar sua resposta.
 
 	String nome = "Eduardo";
 	nome += "de Lucena";
 	nome += "Falcao";
-	Como a classe StringBuilder pode ajudar a tornar o cÛdigo anterior mais eficiente?
-	//R.Existe uma economia no espaÁo de memÛria pois nenhum objeto adicional precisa ser criado.
+	Como a classe StringBuilder pode ajudar a tornar o c√≥digo anterior mais eficiente?
+	//R.Existe uma economia no espa√ßo de mem√≥ria pois nenhum objeto adicional precisa ser criado.
 	
-	StringBuilder nomeCompleto = new StringBuilder("Eduardo");
-	nomeCompleto.append(" de");
-	nomeCompleto.append(" Lucena");
-	nomeCompleto.append(" Falcao");
+	StringBuilder nomeCompleto = new StringBuilder("Maria");
+	nomeCompleto.append(" Cec√≠lia");
+	nomeCompleto.append(" Santos");
+	nomeCompleto.append(" Silva");
 
 	System.out.println(nomeCompleto);*/
 	
@@ -133,7 +80,11 @@ public class StringUtils {
 		
 		String nome = "Maria";
 		System.out.println(System.identityHashCode(nome));
+<<<<<<< HEAD
 		nome += " Cecilia";
+=======
+		nome += " Cec√≠lia";
+>>>>>>> f9ce9b2ce21031493fbbd77749b25c0e219e6a96
 		System.out.println(System.identityHashCode(nome));
 		nome += " Santos";
 		System.out.println(System.identityHashCode(nome));
